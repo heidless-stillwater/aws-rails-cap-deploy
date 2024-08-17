@@ -3,9 +3,10 @@ lock "~> 3.14.0"
 require 'capistrano-db-tasks'
 
 #FIXME add your app name here
-set :application, 'your-app'
+set :application, 'aws-rails'
 #FIXME replace 'git@github.com:YOUR-GIT-REPO-HERE' with your git clone url
-set :repo_url, 'git@github.com:YOUR-GIT-REPO-HERE'
+set :repo_url, 'https://github.com/heidless-stillwater/aws-rails-cap-deploy.git'
+
 #FIXME add location on the server here
 set :deploy_to, '/home/deploy/your-app'
 set :branch, ENV['BRANCH'] if ENV['BRANCH']
